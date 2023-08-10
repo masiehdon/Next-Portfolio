@@ -11,7 +11,5 @@ module.exports = {
         // Enforce a maximum line length of 300 characters
         'max-len': ['error', { code: 300 }],
     },
-    scripts: {
-        format: 'prettier --write .',
-    },
+    
 };

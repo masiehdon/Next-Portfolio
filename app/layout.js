@@ -1,16 +1,17 @@
 /* eslint-disable react/prop-types */
-import styles from './styles/layout.module.css'
+
+import styles from './styles/layout.module.css';
 import Footer from './footer/page';
-import Header from "./header/page"
+import Header from './header/page';
 
 export default function Layout({ children }) {
-  return (
-    <div className={styles.container}>
-      <Header />
-    
-      <main className={styles.main}>{children}</main>
-      
-      <Footer />
-    </div>
-  );
+    return (
+        <div className={styles.container}>
+            <Header />
+
+            <main className={styles.main}>{children}</main>
+
+            <Footer />
+        </div>
+    );
 }
