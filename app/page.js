@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
 
+import Header from "./header/page";
+
 
 export default function App({ Component, pageProps }) {
   return (
    
   <div className='page-container'>
         
-    <h1>hello</h1>
+  
         <Component {...pageProps} /> 
        
         

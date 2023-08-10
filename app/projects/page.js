@@ -1,24 +1,58 @@
 import Link from "next/link"
 import styles from "../styles/projects.module.css"
+import Image from "next/image"
+import dice from '../../public/dice-img.png'
+import blog from '../../public/blog-img.png'
+import trendy from '../../public/trendy-img.png'
+import weather from '../../public/weather-img.png'
 
 export default function Projects() {
+  const diceImg = dice
     return (
       <div className="body">
-        <div className={styles.project}>
+          <div className={styles.project}>
         
-            <h3 className={styles.h3}>WeatherApp</h3>
+          <h3 className={styles.h3}>Blog</h3>
+          <Image
+           src={blog}
+      width={200}
+      height={200}
+            alt="blog"
+          />
 
             <p className={styles.p}>
-              A simple app to check the weather. You will get the current
-              temprature as well as the lowest and highest ones.
+              A blog created with Next.js and supabase
             </p>
             <Link className={styles.a}
-            href="https://masiehdon.github.io/WeatherApp/" target="_blank"
-              >Let me check if its raining!</Link>
-              </div>
+            href="https://my-blog-psi-kohl-71.vercel.app/" target="_blank"
+              >Check it out!</Link>
+        </div>
 
-               <div className={styles.project}>
-            <h3 className={styles.h3}>Trendy Treasures</h3>
+
+        <div className={styles.project}>
+            <h3 className={styles.h3}>Dice Game</h3>
+          <Image
+           src={dice}
+      width={200}
+      height={200}
+      alt="Picture of a dice"
+          />
+            <p className={styles.p}>Check out the my Dice Game and play with a friend.</p>
+            <Link className={styles.a}
+            href="https://masiehdon.github.io/Dice-Game/" target="_blank"
+              >Take me to the game!</Link>
+                         
+        </div>
+
+
+         <div className={styles.project}>
+          <h3 className={styles.h3}>Trendy Treasures</h3>
+           <Image
+           src={trendy}
+      width={200}
+      height={200}
+      alt="trendy treasure"
+          />
 
             <p className={styles.p}>A webshop created with an API.</p>
             <Link className={styles.a}
@@ -27,45 +61,29 @@ export default function Projects() {
               >Lets find a treasure!</Link>
            
           </div>
-          <div className={styles.project}>
-            <h3 className={styles.h3}>Dice Game</h3>
-
-            <p className={styles.p}>Check out the my Dice Game and play with a friend.</p>
-            <Link className={styles.a}
-            href="https://masiehdon.github.io/Dice-Game/" target="_blank"
-              >Take me to the game!</Link>
-                         
-        </div>
-
+          
+        
         <div className={styles.project}>
-            <h3 className={styles.h3}>Dice Game</h3>
+        
+          <h3 className={styles.h3}>WeatherApp</h3>
+           <Image
+           src={weather}
+      width={200}
+      height={200}
+            alt="weather app"
+          />
 
-            <p className={styles.p}>Need to buy something?</p>
+            <p className={styles.p}>
+              A simple app to check the weather. You will get the current
+              temprature as well as the lowest and highest ones.
+            </p>
             <Link className={styles.a}
-            href="https://assignment4-vite-react.vercel.app/" target="_blank"
-              >Take me to the Shop!</Link>
-                         
-        </div>
+            href="https://masiehdon.github.io/WeatherApp/" target="_blank"
+              >Check the weather!</Link>
+              </div>
 
-        <div className={styles.project}>
-            <h3 className={styles.h3}>Assignment 1</h3>
-
-            <p className={styles.p}>Assignment 1</p>
-            <Link className={styles.a}
-            href="https://github.com/masiehdon/Assignment1-React/settings/pages?classId=627619be-4153-4f6e-9a8f-4c2faf497f1d&assignmentId=1e82dd8c-d7b4-4962-b7f2-71fdc997cfc7&submissionId=e81f13d7-1197-4758-70cb-bd2d5be36ded" target="_blank"
-              >Lets go!</Link>
-                         
-        </div>
-
-         <div className={styles.project}>
-            <h3 className={styles.h3}>Assignment 1</h3>
-
-            <p className={styles.p}>Assignment 1</p>
-            <Link className={styles.a}
-            href="https://github.com/masiehdon/Assignment1-React/settings/pages?classId=627619be-4153-4f6e-9a8f-4c2faf497f1d&assignmentId=1e82dd8c-d7b4-4962-b7f2-71fdc997cfc7&submissionId=e81f13d7-1197-4758-70cb-bd2d5be36ded" target="_blank"
-              >Lets go!</Link>
-                         
-        </div>
+  
+      
         
         </div>
     )
