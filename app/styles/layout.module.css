@@ -1,0 +1,9 @@
+.container{
+  position: relative;
+  min-height: 100vh;
+}
+
+.main {
+  position: relative;
+   margin-bottom: 4rem;
+}
