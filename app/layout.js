@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+// 'use client';
 
 import styles from './styles/layout.module.css';
 import Footer from './footer/page';

@@ -7,7 +7,7 @@ import trendy from '../../public/trendy-img.png';
 import weather from '../../public/weather-img.png';
 
 export default function Projects() {
-    const diceImg = dice;
+   
     return (
         <div className="body">
             <div className={styles.project}>
